@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1200</width>
+    <height>633</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1200</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="palette">
+   <palette>
+    <active/>
+    <inactive/>
+    <disabled/>
+   </palette>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QTabWidget{
+subcontrol-position: top left;
+    subcontrol-origin: margin;
+    position: absolute;
+    top: 0px; left: 0px; bottom: 0px;
+}
+QTabWidget::pane {
+background-color: #1d2228;
+color: #fb8122;
+    border-width: 0px;
+    border-color:#ffffff;
+border-style: outset;
+}
+QTabWidget::tab-bar {
+background-color: #2d3238;
+color:  #E1E2E2;
+}
+QTabBar::tab {
+background-color: #2d3238;
+min-width: 30ex;
+padding: 5px;
+}
+QTabBar::tab:selected, QTabBar::tab:hover {
+background-color: #2d3238;
+color: #fb8122;
+}
+QTabBar::tab:selected {
+background-color:  #1d2228;
+border-color: #9B9B9B;
+border-bottom-color: #C2C7CB;
+color: #E1E2E2;
+}
+QTabBar::tab:!selected {
+margin-top: 2px;
+color: #E1E2E2;
+}
+
+
+QPushButton{
+background-color:  #2d3238;
+color:  #E1E2E2;
+}
+
+
+QSplitter::handle:horizontal {
+    width: 3px;
+background-color: #2d3238;
+}
+QSplitter::handle:vertical {
+    height: 3px;
+background-color: #2d3238;
+}
+
+
+QSpinBox {
+padding-right: 15px; /* make room for the arrows */
+border-width:2;
+background-color: #2d3238;
+
+}
+QSpinBox::up-button {
+	 subcontrol-origin: border;
+    subcontrol-position: top right; /* position at the top right corner */
+}
+QSpinBox::down-button {
+    subcontrol-origin: border;
+    subcontrol-position: bottom right; /* position at bottom right corner */
+}
+QSpinBox::down-arrow {
+    width: 15px;
+    height: 15px;
+}
+QSpinBox::up-arrow {
+    width: 15px;
+    height: 15px;
+}
+
+
+QDoubleSpinBox {
+padding-right: 15px; /* make room for the arrows */
+border-width:2;
+background-color: #2d3238;
+}
+QDoubleSpinBox::up-button {
+	 subcontrol-origin: border;
+    subcontrol-position: top right; /* position at the top right corner */
+}
+QDoubleSpinBox::down-button {
+    subcontrol-origin: border;
+    subcontrol-position: bottom right; /* position at bottom right corner */
+}
+QDoubleSpinBox::down-arrow {
+    width: 15px;
+    height: 15px;
+}
+QDoubleSpinBox::up-arrow {
+    width: 15px;
+    height: 15px;
+}
+
+
+QComboBox {
+background-color: #2d3238;
+color:  #E1E2E2;
+border: 0px solid #2d3238;
+border-radius: 0px;
+}
+QComboBox:editable {
+background-color: #2d3238;
+}
+QComboBox:!editable, QComboBox::drop-down:editable {
+background-color:  #2d3238;
+}
+/* QComboBox gets the &quot;on&quot; state when the popup is open */
+QComboBox:!editable:on, QComboBox::drop-down:editable:on {
+background-color: #2d3238;
+}
+QComboBox:on { /* shift the text when the popup opens */
+}
+QComboBox::drop-down {
+subcontrol-origin: padding;
+subcontrol-position: top right;
+width: 20px;
+border-left-width: 1px;
+border-left-color: #E1E2E2;
+border-left-style: solid; /* just a single line */
+border-top-right-radius: 0px; /* same radius as the QComboBox */
+border-bottom-right-radius: 0px;
+selection-background-color:#3d4248;
+}
+QComboBox::down-arrow {
+color: #ffffff;
+}
+QComboBox QAbstractItemView {
+border: 0px solid darkgray;
+background-color:  #3d4248;
+}
+
+
+QLabel {
+background-color: #1d2228;
+color:  #E1E2E2;
+}
+
+
+QLineEdit {
+border: 0px solid gray;
+border-radius: 0px;
+background: #2d3238;
+color: #E1E2E2;
+}
+
+
+QTextEdit, QListView {
+background-color: #1d2228;
+color: #E1E2E2;
+background-attachment: scroll;
+border: 0px solid gray;
+}
+
+
+QTableView {
+background-color: #2d3238;
+color: #E1E2E2;
+}
+
+QTableView QTableCornerButton::section {
+background: #3d4248;
+border: 0px outset #2d3238;
+}
+QTableView::indicator:unchecked {
+background-color: #2d3238;
+}
+
+
+QHeaderView::section {
+background-color:#2d3238;
+color: #E1E2E2;
+border: 0px solid #6c6c6c;
+}
+
+QHeaderView::section:checked
+{
+background-color:#3d4248;
+}
+
+QScrollBar:vertical {
+border: 0px solid grey;
+background: #3d4248;
+width: 15px;
+margin: 20px 0 20px 0;
+}
+QScrollBar::handle:vertical {
+background: #E1E2E2;
+min-height: 0px;
+}
+QScrollBar::add-line:vertical {
+border: 0px solid grey;
+background: #3d4248;
+height: 0px;
+subcontrol-position: bottom;
+subcontrol-origin: margin;
+}
+QScrollBar::sub-line:vertical {
+border: 0px solid grey;
+background: #3d4248;
+height: 0px;
+subcontrol-position: top;
+subcontrol-origin: margin;
+}
+QScrollBar::up-arrow:vertical, QScrollBar::down-arrow:vertical {
+border: 0px solid grey;
+width: 0px;
+height: 0px;
+background: #E1E2E2;
+}
+QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
+background: none;
+}
+
+
+
+QScrollBar:horizontal {
+border: 0px solid grey;
+background: #3d4248;
+height: 15px;
+margin: 0px 20px 0px 20px;
+}
+QScrollBar::handle:horizontal {
+background: #E1E2E2;
+min-width: 0px;
+}
+QScrollBar::add-line:horizontal {
+border: 0px solid grey;
+background: #3d4248;
+width: 0px;
+subcontrol-position: bottom;
+subcontrol-origin: margin;
+}
+QScrollBar::sub-line:horizontal {
+border: 0px solid grey;
+background: #3d4248;
+width: 0px;
+subcontrol-position: top;
+subcontrol-origin: margin;
+}
+QScrollBar::up-arrow:horizontal, QScrollBar::down-arrow:horizontal {
+border: 0px solid grey;
+width: 0px;
+height: 0px;
+background: #E1E2E2;
+}
+QScrollBar::add-page:horizontal, QScrollBar::sub-page:horizontal {
+background: none;
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1200</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ValueDialog</class>
+ <widget class="QDialog" name="ValueDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>300</width>
+    <height>100</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>300</width>
+    <height>100</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>300</width>
+    <height>100</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QTabWidget{
+subcontrol-position: top left;
+    subcontrol-origin: margin;
+    position: absolute;
+    top: 0px; left: 0px; bottom: 0px;
+}
+QTabWidget::pane {
+background-color: #1d2228;
+color: #fb8122;
+    border-width: 0px;
+    border-color:#ffffff;
+border-style: outset;
+}
+QTabWidget::tab-bar {
+background-color: #2d3238;
+color:  #E1E2E2;
+}
+QTabBar::tab {
+background-color: #2d3238;
+min-width: 20ex;
+padding: 2px;
+}
+QTabBar::tab:selected, QTabBar::tab:hover {
+background-color: #2d3238;
+color: #fb8122;
+}
+QTabBar::tab:selected {
+background-color:  #1d2228;
+border-color: #9B9B9B;
+border-bottom-color: #C2C7CB;
+color: #E1E2E2;
+}
+QTabBar::tab:!selected {
+margin-top: 2px;
+color: #E1E2E2;
+}
+
+
+QPushButton{
+background-color:  #2d3238;
+color:  #E1E2E2;
+}
+
+
+QSplitter::handle:horizontal {
+    width: 3px;
+background-color: #2d3238;
+}
+QSplitter::handle:vertical {
+    height: 3px;
+background-color: #2d3238;
+}
+
+
+QSpinBox {
+padding-right: 15px; /* make room for the arrows */
+border-width:2;
+background-color: #2d3238;
+color:  #E1E2E2;
+}
+QSpinBox::up-button {
+	 subcontrol-origin: border;
+    subcontrol-position: top right; /* position at the top right corner */
+}
+QSpinBox::down-button {
+    subcontrol-origin: border;
+    subcontrol-position: bottom right; /* position at bottom right corner */
+}
+QSpinBox::down-arrow {
+    width: 15px;
+    height: 15px;
+}
+QSpinBox::up-arrow {
+    width: 15px;
+    height: 15px;
+}
+
+
+QDoubleSpinBox {
+padding-right: 15px; /* make room for the arrows */
+border-width:2;
+background-color: #2d3238;
+color:  #E1E2E2;
+}
+QDoubleSpinBox::up-button {
+	 subcontrol-origin: border;
+    subcontrol-position: top right; /* position at the top right corner */
+}
+QDoubleSpinBox::down-button {
+    subcontrol-origin: border;
+    subcontrol-position: bottom right; /* position at bottom right corner */
+}
+QDoubleSpinBox::down-arrow {
+    width: 15px;
+    height: 15px;
+}
+QDoubleSpinBox::up-arrow {
+    width: 15px;
+    height: 15px;
+}</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_2">
+   <item>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QLabel" name="label">
+       <property name="text">
+        <string>TextLabel</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="lineEdit"/>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <spacer name="horizontalSpacer">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton">
+         <property name="text">
+          <string>ОК</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton_2">
+         <property name="text">
+          <string>Отмена</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
